@@ -5,41 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <script defer src="js/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <script src="scripts.js"></script>
     <title>Portfolio</title>
 </head>
 
 <body>
     <header>
-        <button id="menu-toggle" onclick="toggleMenu()">
-            <span></span>
-        </button>
         <nav id="navigation">
             <ul>
-                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-                <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
-                <li><a href="#work" onclick="toggleMenu()">My Work</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#home">home()</a></li>
+                <li><a href="#about">aboutMe()</a></li>
+                <li><a href="#work">myWork()</a></li>
+                <li><a href="#contact">contact()</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="home">
-            <h1>Welcome to My Portfolio</h1>
+            <div class="section-heading">
+                <h1>Welcome to My Portfolio</h1>
+            </div>
         </section>
         <section id="about">
-            <h2>About Me</h2>
+            <div class="section-heading">
+                <h2>About Me</h2>
+            </div>
             <p>Some information about me...</p>
         </section>
         <section id="work">
-            <h2>My Work</h2>
+            <div class="section-heading">
+                <h2>My Work</h2>
+            </div>
             <p>Some information about my work...</p>
         </section>
         <section id="contact">
-            <h2>Contact</h2>
+            <div class="section-heading">
+                <h2>Contact</h2>
+            </div>
             <p>Some contact information...</p>
         </section>
+
     </main>
+
 </body>
 
 </html>
