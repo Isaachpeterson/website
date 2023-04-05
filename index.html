@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    <script src="scripts.js"></script>
     <title>Portfolio</title>
 </head>
 
@@ -15,40 +14,75 @@
     <header>
         <nav id="navigation">
             <ul>
-                <li><a href="#home">home()</a></li>
                 <li><a href="#about">aboutMe()</a></li>
                 <li><a href="#work">myWork()</a></li>
-                <li><a href="#contact">contact()</a></li>
+                <li><a href="#certifications">myCertifications()</a></li>
+                <!-- New navigation button -->
+                <li><a href="#contact">contactMe()</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="home">
-            <div class="section-heading">
-                <h1>Welcome to My Portfolio</h1>
-            </div>
-        </section>
         <section id="about">
             <div class="section-heading">
-                <h2>About Me</h2>
+                <h1>aboutMe()</h1>
             </div>
-            <p>Some information about me...</p>
+            <pre id="developer-code">
+                <code>
+              const developer = {
+                name: "<span class="string">Isaac Peterson</span>",
+                role: "<span class="string">Software Engineer</span>",
+                experience: "<span class="string">1+ years</span>",
+                education: {
+                  degree: "<span class="string">Bachelor of Science</span>",
+                  major: "<span class="string">Software Engineering</span>",
+                  university: "<span class="string">University of Central Missouri</span>",
+                },
+                motivation: "<span class="string">to becoming a skilled developer and contribute to projects I am proud of</span>",
+              };
+                </code>
+            </pre>
         </section>
         <section id="work">
             <div class="section-heading">
-                <h2>My Work</h2>
+                <h2>myWork()</h2>
             </div>
             <p>Some information about my work...</p>
         </section>
+        <section id="certifications">
+            <div class="section-heading">
+                <h2>myCertifications()</h2>
+            </div>
+            <pre>
+                <code>
+              const certifications = [
+                {
+                  name: "<span class='string'>Software Architecture & Design of Modern Large Scale Systems</span>",
+                  from: "<span class='string'>Michael Pogrebinsky - Udemy</span>",
+                  issuedDate: "<span class='string'>October 2022</span>",
+                },
+                {
+                  name: "<span class='string'>Java</span>",
+                  from: "<span class='string'>Sololearn</span>",
+                  issuedDate: "<span class='string'>August 2021</span>",
+                },
+                {
+                  name: "<span class='string'>HTML</span>",
+                  from: "<span class='string'>Sololearn</span>",
+                  issuedDate: "<span class='string'>September 2021</span>",
+                },
+              ];
+                </code>
+            </pre>
+        </section>
         <section id="contact">
             <div class="section-heading">
-                <h2>Contact</h2>
+                <h2>contactMe()</h2>
             </div>
             <p>Some contact information...</p>
         </section>
-
     </main>
-
+    <script src="scripts.js"></script>
 </body>
 
 </html>

@@ -10,6 +10,15 @@ body {
     color: #eee;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Fira Code', monospace;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -93,10 +102,60 @@ section:not(:last-child) {
     #scroll-hint {
         display: block;
     }
-}
-
-@media (max-width: 767px) {
     header {
         display: none;
     }
+}
+
+pre {
+    background-color: transparent;
+    color: #eee;
+    padding: 16px;
+    border-radius: 4px;
+    font-family: 'Fira Code', monospace;
+    overflow-x: auto;
+    font-size: 1.1rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.string {
+    color: #98c379;
+}
+
+.keyword {
+    color: #00a0ff;
+}
+
+.punctuation {
+    color: #eee;
+}
+
+#developer-code {
+    display: inline;
+}
+
+.certifications {
+    position: relative;
+}
+
+.certifications .ellipsis {
+    cursor: pointer;
+    color: #00a0ff;
+}
+
+.certifications-list {
+    display: none;
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.certifications-list li {
+    margin-bottom: 4px;
+}
+
+.certifications-list strong,
+.certifications-list em,
+.certifications-list time {
+    color: #00a0ff;
 }
