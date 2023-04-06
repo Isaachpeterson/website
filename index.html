@@ -12,6 +12,11 @@
 
 <body>
     <header>
+        <div id="hamburger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <nav id="navigation">
             <ul>
                 <li><a href="#about">aboutMe()</a></li>
@@ -47,7 +52,33 @@
             <div class="section-heading">
                 <h2>myWork()</h2>
             </div>
-            <p>Some information about my work...</p>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <!-- Project 1 -->
+                    <div class="carousel-item active">
+                        <img src="images/javascriptcalculator_isaac.png" alt="Project 1">
+                        <div class="carousel-caption">
+                            <h3>JavaScript Calculator</h3>
+                            <p>Made a simple calculator using HTML, CSS, and JavaScript.</p>
+                            <button class="github-button" onclick="window.open('https://github.com/Isaachpeterson/JSCalculator', '_blank', 'noopener noreferrer')">View on GitHub</button>
+                            <!-- Only for the JS Calculator to try the calculator -->
+                            <a href="calculator.html" class="tryit-button">Try it!</a>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="carousel-item">
+                        <img src="path/to/project2-image.jpg" alt="Project 2">
+                        <div class="carousel-caption">
+                            <h3>Project 2</h3>
+                            <p>Short description of Project 2...</p>
+                            <button class="github-button" onclick="window.open('https://github.com/username/project1', '_blank', 'noopener noreferrer')">View on GitHub</button>
+                        </div>
+                    </div>
+                    <!-- Add/remove here -->
+                </div>
+                <button class="carousel-control-prev" onclick="prevSlide()">&lt;</button>
+                <button class="carousel-control-next" onclick="nextSlide()">&gt;</button>
+            </div>
         </section>
         <section id="certifications">
             <div class="section-heading">
@@ -79,10 +110,30 @@
             <div class="section-heading">
                 <h2>contactMe()</h2>
             </div>
-            <p>Some contact information...</p>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
-    <script src="scripts.js"></script>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Isaac Peterson. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/isaachpeterson/" target="_blank" rel="noopener noreferrer">linkedIn()</a></li>
+                <li><a href="https://github.com/Isaachpeterson/" target="_blank" rel="noopener noreferrer">gitHub()</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
